@@ -30,7 +30,7 @@ delay  = 30  # rotation speed
 steps = 3  # 3 step is 90 degree
 
 
-def forward(delay, steps):
+def forward(delay, steps):      #this is the function to move the motor forward
   for i in range(0, steps):
     setStep(1, 0, 1, 0)
     time.sleep(delay)
