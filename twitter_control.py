@@ -10,10 +10,10 @@ import datetime
 GPIO.setmode(GPIO.BCM)
 
 
-app_key = "xxx"
-app_secret = "xxx"
-oauth_token = "# XXX: "
-oauth_token_secret = "xxx"
+app_key = "xxx" # here you should add you app_key
+app_secret = "xxx" # here you should add you app_secret
+oauth_token = "#xxx" # here you should add you oauth_token
+oauth_token_secret = "xxx" # here you should add you oauth_token_secret
 twitter = Twython(app_key,app_secret,oauth_token,oauth_token_secret)
 
 coil_A_1_pin = 4
