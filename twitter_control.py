@@ -16,10 +16,10 @@ oauth_token = "#xxx" # here you should add you oauth_token
 oauth_token_secret = "xxx" # here you should add you oauth_token_secret
 twitter = Twython(app_key,app_secret,oauth_token,oauth_token_secret)
 
-coil_A_1_pin = 4
-coil_A_2_pin = 17
-coil_B_1_pin = 23
-coil_B_2_pin = 24
+coil_A_1_pin = 4 # this is the output of the Raspberry-pi GPIO pin that control coil A1 of the StepMotor
+coil_A_2_pin = 17 # this is the output of the Raspberry-pi GPIO pin that control coil A2 of the StepMotor
+coil_B_1_pin = 23 # this is the output of the Raspberry-pi GPIO pin that control coil B1 of the StepMotor
+coil_B_2_pin = 24 # this is the output of the Raspberry-pi GPIO pin that control coil B2 of the StepMotor
 
 GPIO.setup(coil_A_1_pin, GPIO.OUT)
 GPIO.setup(coil_A_2_pin, GPIO.OUT)
