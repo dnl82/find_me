@@ -21,10 +21,10 @@ coil_A_2_pin = 17 # this is the output of the Raspberry-pi GPIO pin that control
 coil_B_1_pin = 23 # this is the output of the Raspberry-pi GPIO pin that control coil B1 of the StepMotor
 coil_B_2_pin = 24 # this is the output of the Raspberry-pi GPIO pin that control coil B2 of the StepMotor
 
-GPIO.setup(coil_A_1_pin, GPIO.OUT)
-GPIO.setup(coil_A_2_pin, GPIO.OUT)
-GPIO.setup(coil_B_1_pin, GPIO.OUT)
-GPIO.setup(coil_B_2_pin, GPIO.OUT)
+GPIO.setup(coil_A_1_pin, GPIO.OUT) # setting PIN4 as output
+GPIO.setup(coil_A_2_pin, GPIO.OUT) # setting PIN17 as output
+GPIO.setup(coil_B_1_pin, GPIO.OUT) # setting PIN23 as output
+GPIO.setup(coil_B_2_pin, GPIO.OUT) # setting PIN24 as output
 
 delay  = 30  # rotation speed
 steps = 3  # 3 step is 90 degree
