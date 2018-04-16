@@ -10,10 +10,10 @@ import datetime
 GPIO.setmode(GPIO.BCM)
 
 
-app_key = "Kb1F0wdNnPNrydaLS7ISs4EKV"
-app_secret = "Gt52bI9Hi8Oi3OjTcna8Ju5bmatHgEWB6hBSYaA9WDDEsc0m8D"
-oauth_token = "828582153122365441-LSefccodxJyYxWHKbxw4CNNTRKUHUgr"
-oauth_token_secret = "gk3XhVEFaeBvqXsFSdE1TuRkrOurjNedGS5S6Yn50KLuZ"
+app_key = "xxx"
+app_secret = "xxx"
+oauth_token = "# XXX: "
+oauth_token_secret = "xxx"
 twitter = Twython(app_key,app_secret,oauth_token,oauth_token_secret)
 
 coil_A_1_pin = 4
@@ -30,7 +30,7 @@ delay  = 30  # rotation speed
 steps = 3  # 3 step is 90 degree
 
 
-def forward(delay, steps):  
+def forward(delay, steps):
   for i in range(0, steps):
     setStep(1, 0, 1, 0)
     time.sleep(delay)
@@ -40,8 +40,8 @@ def forward(delay, steps):
     time.sleep(delay)
     setStep(1, 0, 0, 1)
     time.sleep(delay)
- 
-def backwards(delay, steps):  
+
+def backwards(delay, steps):
   for i in range(0, steps):
     setStep(1, 0, 0, 1)
     time.sleep(delay)
@@ -114,7 +114,7 @@ def check_twitter():
         setStep(0, 0, 0, 0)
         delete_tweet()
 
-        
+
     elif current_message == "BackSoon":
         print("BackSoon")
         if current_position == "1":				#WFH
