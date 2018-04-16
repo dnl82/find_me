@@ -41,7 +41,7 @@ def forward(delay, steps):      #this is the function to move the motor forward
     setStep(1, 0, 0, 1)
     time.sleep(delay)
 
-def backwards(delay, steps):
+def backwards(delay, steps): #this is the function to move the motor backward
   for i in range(0, steps):
     setStep(1, 0, 0, 1)
     time.sleep(delay)
