@@ -58,7 +58,7 @@ def setStep(w1, w2, w3, w4):
   GPIO.output(coil_B_1_pin, w3)
   GPIO.output(coil_B_2_pin, w4)
 
-def delete_tweet():
+def delete_tweet():                                 # this function will delete the last recognized tweet
    timeline = twitter.get_user_timeline(count=1)
    for tweet in timeline:
         status_t = int(tweet['id_str'])
